@@ -1,0 +1,245 @@
+ {/* <form>
+            <div style={{ textAlign: "justify" }}>
+              <TextField
+                id="standard-basic"
+                label="First Name"
+                variant="outlined"
+                name="Firstname"
+                value={input.Firstname}
+                onChange={handleChange}
+                sx={{ m: 1 }}
+              />
+              <TextField
+                id="standard-basic"
+                label="Middle Name"
+                variant="outlined"
+                name="Middlename"
+                value={input.Middlename}
+                onChange={handleChange}
+                sx={{ mt: 1, mb: 1, ml: 2, mr: 1 }}
+              />
+              <TextField
+                id="standard-basic"
+                label="Last Name"
+                variant="outlined"
+                name="Lastname"
+                value={input.Lastname}
+                onChange={handleChange}
+                sx={{ mt: 1, mb: 1, ml: 2 }}
+              />
+            </div>
+
+            <div style={{ textAlign: "center" }}>
+              <TextField
+                id="standard-basic"
+                label="Phonenumber"
+                variant="outlined"
+                name="Phonenumber"
+                value={input.Phonenumber}
+                onChange={handleChange}
+                sx={{ m: 1 }}
+              />
+              <TextField
+                id="standard-basic"
+                label="Email_id"
+                variant="outlined"
+                name="Email_id"
+                value={input.Email_id}
+                onChange={handleChange}
+                sx={{ m: 1 }}
+              />
+              <TextField
+                type="password"
+                id="standard-basic"
+                label="Password"
+                variant="outlined"
+                name="Password"
+                value={input.Password}
+                onChange={handleChange}
+                sx={{ m: 1 }}
+              />
+            </div>
+
+            <div
+              style={{
+                marginLeft: 8,
+                marginRight: 10,
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
+              <Box
+                component="span"
+                sx={{
+                  p: 2,
+                  border: "1px solid lightgrey",
+                  borderRadius: "5px",
+                  flex: 0.52,
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                  }}
+                >
+                  <FormLabel
+                    id="demo-row-radio-buttons-group-label"
+                    sx={{ mr: 1 }}
+                  >
+                    Gender :
+                  </FormLabel>
+                  <RadioGroup
+                    row
+                    name="Gender"
+                    value={input.Gender}
+                    onChange={handleChange}
+                  >
+                    <FormControlLabel
+                      control={<Radio />}
+                      label="Male"
+                      value="Male"
+                    />
+                    <FormControlLabel
+                      control={<Radio />}
+                      label="Female"
+                      value="Female"
+                    />
+                    <FormControlLabel
+                      control={<Radio />}
+                      label="Other"
+                      value="Other"
+                    />
+                  </RadioGroup>
+                </div>
+              </Box>
+              <Box
+                component="span"
+                sx={{
+                  pl: 2,
+                  border: "1px solid lightgrey",
+                  borderRadius: "5px",
+                  flex: 0.455,
+                }}
+              >
+                <div
+                  style={{
+                    marginRight: 8,
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                  }}
+                >
+                  <FormLabel
+                    id="demo-row-radio-buttons-group-label"
+                    sx={{ mr: 3 }}
+                  >
+                    DOB :
+                  </FormLabel>
+                  <TextField
+                    type="date"
+                    id="standard-basic"
+                    variant="outlined"
+                    name="DOB"
+                    value={input.DOB}
+                    onChange={handleChange}
+                    sx={{ m: 1 }}
+                  />
+                </div>
+              </Box>
+            </div>
+
+            <div style={{ textAlign: "center", marginRight: 18 }}>
+              <TextField
+                multiline
+                rows={3}
+                fullWidth
+                id="standard-basic"
+                label="Address"
+                variant="outlined"
+                name="Address"
+                value={input.Address}
+                onChange={handleChange}
+                sx={{ m: 1 }}
+              />
+            </div>
+
+            <div style={{ marginTop: 2 }}>
+              <TextField
+                id="standard-basic"
+                label="City"
+                variant="outlined"
+                name="City"
+                value={input.City}
+                onChange={handleChange}
+                sx={{ m: 1 }}
+              />
+              <TextField
+                id="standard-basic"
+                label="Pincode"
+                variant="outlined"
+                type="tel"
+                name="Pincode"
+                value={input.Pincode}
+                onChange={handleChange}
+                sx={{ m: 1 }}
+              />
+
+              <TextField
+                id="outlined-select"
+                select
+                // width = "800px"
+                label="Department"
+                sx={{ m: 1, width: "230px" }}
+              >
+                <MenuItem value="SE">Software Department</MenuItem>
+                <MenuItem value="NE">Network</MenuItem>
+                <MenuItem value="SE">Software Department</MenuItem>
+                <MenuItem value="NE">Network</MenuItem>
+              </TextField>
+            </div>
+            
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                marginTop: 20,
+                justifyContent: "center",
+              }}
+            >
+              <Button
+                sx={{ mr: 2, flex: 0.3 }}
+                variant="contained"
+                startIcon={<LibraryAddOutlinedIcon />}
+                onClick={handleAddEmployee}
+              >
+                Add Employee
+              </Button>
+              <Button
+                sx={{ flex: 0.3 }}
+                variant="outlined"
+                color="error"
+                startIcon={<CancelIcon />}
+                onClick={() => {
+                  setInput({
+                    Firstname: "",
+                    Middlename: "",
+                    Lastname: "",
+                    Gender: "",
+                    Phonenumber: "",
+                    Email_id: "",
+                    Password: "",
+                    DOB: "",
+                    Address: "",
+                    City: "",
+                    Pincode: "",
+                  });
+                  setIsModalOpen(false);
+                }}
+              >
+                Cancel
+              </Button>
+            </div>
+          </form> */}
